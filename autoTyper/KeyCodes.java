@@ -1,0 +1,106 @@
+package autoTyper;
+
+import java.awt.event.KeyEvent;
+import java.util.HashMap;
+import java.util.Map;
+
+public class KeyCodes {
+    public static String SHIFT = String.valueOf(KeyEvent.VK_SHIFT) + ",";
+    public static Map<String, String> myMap = new HashMap<String, String>() {{
+        put("a", String.valueOf(KeyEvent.getExtendedKeyCodeForChar('a')));
+        put("b", String.valueOf(KeyEvent.getExtendedKeyCodeForChar('b')));
+        put("c", String.valueOf(KeyEvent.getExtendedKeyCodeForChar('c')));
+        put("d", String.valueOf(KeyEvent.getExtendedKeyCodeForChar('d')));
+        put("e", String.valueOf(KeyEvent.getExtendedKeyCodeForChar('e')));
+        put("f", String.valueOf(KeyEvent.getExtendedKeyCodeForChar('f')));
+        put("g", String.valueOf(KeyEvent.getExtendedKeyCodeForChar('g')));
+        put("h", String.valueOf(KeyEvent.getExtendedKeyCodeForChar('h')));
+        put("i", String.valueOf(KeyEvent.getExtendedKeyCodeForChar('i')));
+        put("j", String.valueOf(KeyEvent.getExtendedKeyCodeForChar('j')));
+        put("k", String.valueOf(KeyEvent.getExtendedKeyCodeForChar('k')));
+        put("l", String.valueOf(KeyEvent.getExtendedKeyCodeForChar('l')));
+        put("m", String.valueOf(KeyEvent.getExtendedKeyCodeForChar('m')));
+        put("n", String.valueOf(KeyEvent.getExtendedKeyCodeForChar('n')));
+        put("o", String.valueOf(KeyEvent.getExtendedKeyCodeForChar('o')));
+        put("p", String.valueOf(KeyEvent.getExtendedKeyCodeForChar('p')));
+        put("q", String.valueOf(KeyEvent.getExtendedKeyCodeForChar('q')));
+        put("r", String.valueOf(KeyEvent.getExtendedKeyCodeForChar('r')));
+        put("s", String.valueOf(KeyEvent.getExtendedKeyCodeForChar('s')));
+        put("t", String.valueOf(KeyEvent.getExtendedKeyCodeForChar('t')));
+        put("u", String.valueOf(KeyEvent.getExtendedKeyCodeForChar('u')));
+        put("v", String.valueOf(KeyEvent.getExtendedKeyCodeForChar('v')));
+        put("w", String.valueOf(KeyEvent.getExtendedKeyCodeForChar('w')));
+        put("x", String.valueOf(KeyEvent.getExtendedKeyCodeForChar('x')));
+        put("y", String.valueOf(KeyEvent.getExtendedKeyCodeForChar('y')));
+        put("z", String.valueOf(KeyEvent.getExtendedKeyCodeForChar('z')));
+        put(" ", String.valueOf(KeyEvent.getExtendedKeyCodeForChar(' ')));
+        put("1", String.valueOf(KeyEvent.getExtendedKeyCodeForChar('1')));
+        put("2", String.valueOf(KeyEvent.getExtendedKeyCodeForChar('2')));
+        put("3", String.valueOf(KeyEvent.getExtendedKeyCodeForChar('3')));
+        put("4", String.valueOf(KeyEvent.getExtendedKeyCodeForChar('4')));
+        put("5", String.valueOf(KeyEvent.getExtendedKeyCodeForChar('5')));
+        put("6", String.valueOf(KeyEvent.getExtendedKeyCodeForChar('6')));
+        put("7", String.valueOf(KeyEvent.getExtendedKeyCodeForChar('7')));
+        put("8", String.valueOf(KeyEvent.getExtendedKeyCodeForChar('8')));
+        put("9",String.valueOf(KeyEvent.getExtendedKeyCodeForChar('9')));
+        put("0", String.valueOf(KeyEvent.getExtendedKeyCodeForChar('0')));
+        put(".", String.valueOf(KeyEvent.getExtendedKeyCodeForChar('.')));
+        put(";",String.valueOf(KeyEvent.getExtendedKeyCodeForChar(';')));
+        put("[", String.valueOf(KeyEvent.getExtendedKeyCodeForChar('[')));
+        put("]", String.valueOf(KeyEvent.getExtendedKeyCodeForChar(']')));
+        put("=", String.valueOf(KeyEvent.getExtendedKeyCodeForChar('=')));
+        put("-", String.valueOf(KeyEvent.getExtendedKeyCodeForChar('-')));
+        put("/", String.valueOf(KeyEvent.getExtendedKeyCodeForChar('/')));
+        put("\'",String.valueOf(KeyEvent.getExtendedKeyCodeForChar('\'')));
+        put("\\",String.valueOf(KeyEvent.getExtendedKeyCodeForChar('\\')));
+        put("A", SHIFT + String.valueOf(KeyEvent.getExtendedKeyCodeForChar('a')));
+        put("B", SHIFT + String.valueOf(KeyEvent.getExtendedKeyCodeForChar('b')));
+        put("C", SHIFT + String.valueOf(KeyEvent.getExtendedKeyCodeForChar('c')));
+        put("D", SHIFT + String.valueOf(KeyEvent.getExtendedKeyCodeForChar('d')));
+        put("E", SHIFT + String.valueOf(KeyEvent.getExtendedKeyCodeForChar('e')));
+        put("F", SHIFT + String.valueOf(KeyEvent.getExtendedKeyCodeForChar('f')));
+        put("G", SHIFT + String.valueOf(KeyEvent.getExtendedKeyCodeForChar('g')));
+        put("H", SHIFT + String.valueOf(KeyEvent.getExtendedKeyCodeForChar('h')));
+        put("I", SHIFT + String.valueOf(KeyEvent.getExtendedKeyCodeForChar('i')));
+        put("J", SHIFT + String.valueOf(KeyEvent.getExtendedKeyCodeForChar('j')));
+        put("K", SHIFT + String.valueOf(KeyEvent.getExtendedKeyCodeForChar('k')));
+        put("L", SHIFT + String.valueOf(KeyEvent.getExtendedKeyCodeForChar('l')));
+        put("M", SHIFT + String.valueOf(KeyEvent.getExtendedKeyCodeForChar('m')));
+        put("N", SHIFT + String.valueOf(KeyEvent.getExtendedKeyCodeForChar('n')));
+        put("O", SHIFT + String.valueOf(KeyEvent.getExtendedKeyCodeForChar('o')));
+        put("P", SHIFT + String.valueOf(KeyEvent.getExtendedKeyCodeForChar('p')));
+        put("Q", SHIFT + String.valueOf(KeyEvent.getExtendedKeyCodeForChar('q')));
+        put("R", SHIFT + String.valueOf(KeyEvent.getExtendedKeyCodeForChar('r')));
+        put("S", SHIFT + String.valueOf(KeyEvent.getExtendedKeyCodeForChar('s')));
+        put("T", SHIFT + String.valueOf(KeyEvent.getExtendedKeyCodeForChar('t')));
+        put("U", SHIFT + String.valueOf(KeyEvent.getExtendedKeyCodeForChar('u')));
+        put("V", SHIFT + String.valueOf(KeyEvent.getExtendedKeyCodeForChar('v')));
+        put("W", SHIFT + String.valueOf(KeyEvent.getExtendedKeyCodeForChar('w')));
+        put("X", SHIFT + String.valueOf(KeyEvent.getExtendedKeyCodeForChar('x')));
+        put("Y", SHIFT + String.valueOf(KeyEvent.getExtendedKeyCodeForChar('y')));
+        put("Z", SHIFT + String.valueOf(KeyEvent.getExtendedKeyCodeForChar('z')));
+        put("!", SHIFT + String.valueOf(KeyEvent.getExtendedKeyCodeForChar('1')));
+        put("@", SHIFT + String.valueOf(KeyEvent.getExtendedKeyCodeForChar('2')));
+        put("#", SHIFT + String.valueOf(KeyEvent.getExtendedKeyCodeForChar('3')));
+        put("$", SHIFT + String.valueOf(KeyEvent.getExtendedKeyCodeForChar('4')));
+        put("%", SHIFT + String.valueOf(KeyEvent.getExtendedKeyCodeForChar('5')));
+        put("^", SHIFT + String.valueOf(KeyEvent.getExtendedKeyCodeForChar('6')));
+        put("&", SHIFT + String.valueOf(KeyEvent.getExtendedKeyCodeForChar('7')));
+        put("*", SHIFT + String.valueOf(KeyEvent.getExtendedKeyCodeForChar('7')));
+        put("(", SHIFT + String.valueOf(KeyEvent.getExtendedKeyCodeForChar('7')));
+        put(")", SHIFT + String.valueOf(KeyEvent.getExtendedKeyCodeForChar('7')));
+        put("+", SHIFT + String.valueOf(KeyEvent.getExtendedKeyCodeForChar('=')));
+        put("(", SHIFT + String.valueOf(KeyEvent.getExtendedKeyCodeForChar('9')));
+        put(")", SHIFT + String.valueOf(KeyEvent.getExtendedKeyCodeForChar('0')));
+        put("{", SHIFT + String.valueOf(KeyEvent.getExtendedKeyCodeForChar('[')));
+        put("}", SHIFT + String.valueOf(KeyEvent.getExtendedKeyCodeForChar(']')));
+        put("<", SHIFT + String.valueOf(KeyEvent.getExtendedKeyCodeForChar(',')));
+        put(">", SHIFT + String.valueOf(KeyEvent.getExtendedKeyCodeForChar('.')));
+        put("?", SHIFT + String.valueOf(KeyEvent.getExtendedKeyCodeForChar('/')));
+        put("\"", SHIFT + String.valueOf(KeyEvent.getExtendedKeyCodeForChar('\'')));
+
+
+
+    }};
+
+}

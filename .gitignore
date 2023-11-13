@@ -1,5 +1,5 @@
 /news.java
 
 
-*.class
-*/*.class
+/*.class
+/*/*.class

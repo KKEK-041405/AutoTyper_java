@@ -29,7 +29,8 @@ public class AutoTyper extends Robot {
                 System.out.print(txt.charAt(i));
             }
              catch (Exception e) {
-                System.out.println(e);
+                System.out.println(e+"sfjdsl");
+                
             }
         }
         keyPress(KeyEvent.VK_ENTER);

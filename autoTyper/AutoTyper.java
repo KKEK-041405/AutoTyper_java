@@ -2,8 +2,6 @@ package autoTyper;
 import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
-
-import autoTyper.KeyCodes;
 public class AutoTyper extends Robot {
 
     public AutoTyper() throws AWTException {

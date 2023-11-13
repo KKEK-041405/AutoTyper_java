@@ -1,13 +1,5 @@
-import java.awt.AWTException;
-import java.awt.Robot;
-import java.awt.RenderingHints.Key;
-import java.awt.event.KeyEvent;
-
 import Reader.FReader;
 import autoTyper.AutoTyper;
-import autoTyper.KeyCodes;
-
-
 
 public class App {
     public static void main(String[] args) throws Exception {

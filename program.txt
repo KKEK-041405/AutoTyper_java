@@ -1,28 +1,31 @@
-import java.awt.AWTException;
-import java.awt.Robot;
-import java.awt.RenderingHints.Key;
-import java.awt.event.KeyEvent;
-
-import Reader.FReader;
-import autoTyper.AutoTyper;
-import autoTyper.KeyCodes;
-
-
-
-public class App {
-    public static void main(String[] args) throws Exception {
-        AutoTyper autoTyper = new AutoTyper();
-        FReader fReader = new FReader("program.txt");
-        for (int i = 0; i < 10; i++) {
-            Thread.sleep(1000);
-            System.out.println("Auto Typer Starts in "+(10-i));
-        }
-        for (int i = 0; i < 100; i++) {
-            String line = fReader.read();
-            if (line.contains( "//\\TerminateAutoTyper"))  break; 
-            autoTyper.type(line);
-                
-        }
-    }
+#include<stdio.h>
+void main()
+{
+	int a[10],n,i,j,temp=0;
+	printf("Enter number of  elements in the array: ");
+	scanf("%d",&n);
+	printf("Enter the elements of array: ");
+	for(i=0;i<n;i++)
+	{
+		scanf("%d",&a[i]);
+	}
+	for(i=1;i<n;i++)
+	{
+		j=i;
+		while(j>0 && a[j-1]>a[j])
+		{
+			temp=a[j];
+			a[j]=a[j-1];
+			a[j-1]=temp;
+			j--;
+		}
+	}
+	printf("Sorted array in ascending order:");
+	for(i=0;i<n;i++)
+	{
+		if(i<n-1)
+		printf("%d ",a[i]);
+		else
+		printf("%d \n",a[i]);
+	}
 }
-//TerminateAutoTyper

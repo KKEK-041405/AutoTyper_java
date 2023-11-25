@@ -15,19 +15,22 @@ public class AutoTyper extends Robot {
                 String letter =  String.valueOf(txt.charAt(i));
                 String[] keycodes= KeyCodes.myMap.get(letter).split(",");
                 for (String keycode : keycodes) {
-                    // System.out.println(keycode);
+
+                    System.out.println(keycode);
                     keyPress(Integer.parseInt(keycode));
+                    Thread.sleep(10);
                 }
                 for (String keycode : keycodes) {
-                    // System.out.println(keycode);
+                    System.out.println(keycode);
                     keyRelease(Integer.parseInt(keycode));
                 }
             }
+
             catch(NullPointerException e) {
                 System.out.print(txt.charAt(i));
             }
              catch (Exception e) {
-                System.out.println(e+"sfjdsl");
+                System.out.println(e);
                 
             }
         }

@@ -6,6 +6,11 @@ import java.util.Map;
 
 public class KeyCodes {
     public static String SHIFT = String.valueOf(KeyEvent.VK_SHIFT) + ",";
+    public static String DELETE = String.valueOf(KeyEvent.VK_DELETE);
+    public static String BACK_SPACE = String.valueOf(KeyEvent.VK_BACK_SPACE);
+    public static String RIGHT = String.valueOf(KeyEvent.VK_RIGHT);
+    public static String LEFT = String.valueOf(KeyEvent.VK_LEFT);
+
     public static Map<String, String> myMap = new HashMap<String, String>() {{
         put("a", String.valueOf(KeyEvent.getExtendedKeyCodeForChar('a')));
         put("b", String.valueOf(KeyEvent.getExtendedKeyCodeForChar('b')));
@@ -42,15 +47,17 @@ public class KeyCodes {
         put("6", String.valueOf(KeyEvent.getExtendedKeyCodeForChar('6')));
         put("7", String.valueOf(KeyEvent.getExtendedKeyCodeForChar('7')));
         put("8", String.valueOf(KeyEvent.getExtendedKeyCodeForChar('8')));
-        put("9",String.valueOf(KeyEvent.getExtendedKeyCodeForChar('9')));
+        put("9", String.valueOf(KeyEvent.getExtendedKeyCodeForChar('9')));
         put("0", String.valueOf(KeyEvent.getExtendedKeyCodeForChar('0')));
         put(".", String.valueOf(KeyEvent.getExtendedKeyCodeForChar('.')));
-        put(";",String.valueOf(KeyEvent.getExtendedKeyCodeForChar(';')));
+        put(";", String.valueOf(KeyEvent.getExtendedKeyCodeForChar(';')));
+        put(":",SHIFT+ String.valueOf(KeyEvent.getExtendedKeyCodeForChar(';')));
         put("[", String.valueOf(KeyEvent.getExtendedKeyCodeForChar('[')));
         put("]", String.valueOf(KeyEvent.getExtendedKeyCodeForChar(']')));
         put("=", String.valueOf(KeyEvent.getExtendedKeyCodeForChar('=')));
         put("-", String.valueOf(KeyEvent.getExtendedKeyCodeForChar('-')));
         put("/", String.valueOf(KeyEvent.getExtendedKeyCodeForChar('/')));
+        put(",", String.valueOf(KeyEvent.getExtendedKeyCodeForChar(',')));
         put("\'",String.valueOf(KeyEvent.getExtendedKeyCodeForChar('\'')));
         put("\\",String.valueOf(KeyEvent.getExtendedKeyCodeForChar('\\')));
         put("A", SHIFT + String.valueOf(KeyEvent.getExtendedKeyCodeForChar('a')));
@@ -86,12 +93,10 @@ public class KeyCodes {
         put("%", SHIFT + String.valueOf(KeyEvent.getExtendedKeyCodeForChar('5')));
         put("^", SHIFT + String.valueOf(KeyEvent.getExtendedKeyCodeForChar('6')));
         put("&", SHIFT + String.valueOf(KeyEvent.getExtendedKeyCodeForChar('7')));
-        put("*", SHIFT + String.valueOf(KeyEvent.getExtendedKeyCodeForChar('7')));
-        put("(", SHIFT + String.valueOf(KeyEvent.getExtendedKeyCodeForChar('7')));
-        put(")", SHIFT + String.valueOf(KeyEvent.getExtendedKeyCodeForChar('7')));
-        put("+", SHIFT + String.valueOf(KeyEvent.getExtendedKeyCodeForChar('=')));
+        put("*", SHIFT + String.valueOf(KeyEvent.getExtendedKeyCodeForChar('8')));
         put("(", SHIFT + String.valueOf(KeyEvent.getExtendedKeyCodeForChar('9')));
         put(")", SHIFT + String.valueOf(KeyEvent.getExtendedKeyCodeForChar('0')));
+        put("+", SHIFT + String.valueOf(KeyEvent.getExtendedKeyCodeForChar('=')));
         put("{", SHIFT + String.valueOf(KeyEvent.getExtendedKeyCodeForChar('[')));
         put("}", SHIFT + String.valueOf(KeyEvent.getExtendedKeyCodeForChar(']')));
         put("<", SHIFT + String.valueOf(KeyEvent.getExtendedKeyCodeForChar(',')));
